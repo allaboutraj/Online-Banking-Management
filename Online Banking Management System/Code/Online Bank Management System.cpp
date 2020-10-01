@@ -3,16 +3,18 @@
 #include<iostream>
 using namespace std;
 
+//creating a class named bank
 class bank{
 	char name[50],add[100], y;
 	int balance;
 	
 	public:
+	//defining the different programs
 		void open_account();
 		void deposit_money();
 		void withdraw_money();
 		void display_account();
-		//void exit();
+		
 };
 
 void bank :: open_account(){
@@ -115,9 +117,7 @@ int main(){
 	if(g=='n' || g=='N')
 	exit(0);
 	}while(g=='y' || g=='Y');
-	//getch();
-	//cin>>g;
-
+	
 	return 0;
 }
 
